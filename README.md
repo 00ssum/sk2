@@ -20,9 +20,9 @@
 
 ## 작업 순서
 
-1. `git clone https://github.com/00ssum/sk2 && bash sk2/install.sh .`
+1. `git clone https://github.com/00ssum/sk2.git` -> `bash sk2/install.sh .` -> git init
 2. `codex` → `/model` 6.1 Sol
-3. `$kickoff`
+3. `$kickoff` # 과제 파악
 4. 실무자 DM → 답은 NOTES.md에
 5. DECISIONS.md 0번 합의문 → `$decide`
 6. 첫 완주 (입력→출력 하나) → 커밋
@@ -31,5 +31,6 @@
 9. `$brief` → 읽고 보완
 10. 종료 10분 전 제출
 11. 서술형 4문장: 결정 / 구조 / 검증 / 한계
+
 
 막히면: 적는다 → 확인한다 → 커밋한다 → 설명한다
