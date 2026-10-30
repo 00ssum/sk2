@@ -30,6 +30,18 @@
 8. 종료 35분 전 동결 → `bash sk2/scripts/presubmit.sh .` → 제출 문서
 9. `$brief` → 읽고 보완
 10. 종료 10분 전 제출
+
+
+## git
+git add . # 변경사항 전체
+git add <파일경로> #특정파일
+
+git commit -m "메세지"
+
+# add 만 취소
+git reset HEAD
+# commit 최소
+git reset HEAD~1
 11. 서술형 4문장: 결정 / 구조 / 검증 / 한계
 
 
