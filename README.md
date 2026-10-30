@@ -1,4 +1,4 @@
-# kit — SK하이닉스 AI 해커톤 2차 예선 개인 작업 하네스
+# kit — AI 해커톤 2차 예선 개인 작업 하네스
 
 응시 중 AI(Codex)에게 지킬 규칙과 기록 양식을 담은 범용 작업 도구. 특정 과제의 답이나 코드를 포함하지 않는다. 2차 예선 결과 통지 전까지 공개 상태로 유지한다.
 
@@ -20,7 +20,7 @@
 
 ## 사용
 ```
-git clone https://github.com/<계정>/<레포> /tmp/kit && bash /tmp/kit/install.sh .
+git clone https://github.com/00ssum/sk2 /tmp/kit && bash /tmp/kit/install.sh .
 codex   # /status → /model 6.1 Sol → "AGENTS.md 읽었어?"
 ```
 kit 본체는 /tmp에 두고 작업 폴더에는 AGENTS.md, NOTES.md, DECISIONS.md, .agents/skills만 들어간다.
