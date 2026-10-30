@@ -20,8 +20,6 @@
 
 ## 작업 순서
 
-## 작업 순서
-
 1. `git clone https://github.com/00ssum/sk2 && bash sk2/install.sh .`
 2. `codex` → `/model` 6.1 Sol
 3. `$kickoff`

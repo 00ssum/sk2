@@ -27,5 +27,12 @@ for s in kickoff decide verify brief; do
 done
 echo ".agents/skills: kickoff, decide, verify, brief"
 
+# kit 폴더가 작업 폴더 안에 있으면 제출물에서 제외
+KIT_REL="$(python3 -c "import os;print(os.path.relpath('$KIT','$PWD'))")"
+case "$KIT_REL" in ..*|/*) ;; *)
+  grep -qxF "$KIT_REL/" .gitignore 2>/dev/null || echo "$KIT_REL/" >> .gitignore
+  echo ".gitignore: $KIT_REL/ 제외";;
+esac
+
 echo "python: $(python3 -V 2>&1)   node: $(node -v 2>&1 || echo 없음)"
 echo "완료. codex를 (재)시작하고 /skills 로 kickoff, decide, verify, brief가 보이는지 확인."

@@ -7,8 +7,8 @@
 | 1 | 감독 연결 | 웹캠 → 전체화면 공유 → Proctor 앱 연결 QR | |
 | 2 | README 열림 | 파일 탐색기에서 README.md | |
 | 3 | 버전 | `python3 -V` `node -v` `git --version` | |
-| 4 | clone 되나 | `git clone https://github.com/00ssum/sk2 /tmp/kit` | |
-| 5 | 설치 | `bash /tmp/kit/install.sh .` → AGENTS.md, NOTES.md 생김 | |
+| 4 | clone 되나 | `git clone https://github.com/00ssum/sk2` | |
+| 5 | 설치 | `bash sk2/install.sh .` → AGENTS.md, NOTES.md 생김 | |
 | 6 | Codex 시작 | `codex` → 신뢰 확인 y → `/status` (모델·권한 적기) | |
 | 7 | 모델 | `/model` → 6.1 Sol 선택 | |
 | 8 | AGENTS.md 읽나 | "AGENTS.md 읽었어? 변인 통제 규칙 한 줄로" | |
