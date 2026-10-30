@@ -18,13 +18,18 @@
 | scripts/presubmit.sh | 제출 전 점검 (보여 주기만) | 12:20 동결 후 |
 | install.sh | 위 파일을 작업 폴더에 넣음 | 시작 직후 |
 
-## 사용
-```
-git clone https://github.com/00ssum/sk2 /tmp/kit && bash /tmp/kit/install.sh .
-codex   # /status → /model 6.1 Sol → "AGENTS.md 읽었어?"
-```
-kit 본체는 /tmp에 두고 작업 폴더에는 AGENTS.md, NOTES.md, DECISIONS.md, .agents/skills만 들어간다.
+## 작업 순서
 
-## 원칙 한 줄
-가설 하나 → 변경 하나 → 확인 하나 → 기록 한 줄.
-흐름: $kickoff → (DM) → $decide → 구현 → $verify → $decide → ... → $brief
+1. `git clone https://github.com/00ssum/sk2 /tmp/kit && bash /tmp/kit/install.sh .`
+2. `codex` → `/model` 6.1 Sol
+3. `$kickoff`
+4. 실무자 DM → 답은 NOTES.md에
+5. DECISIONS.md 0번 합의문 → `$decide`
+6. 첫 완주 (입력→출력 하나) → 커밋
+7. 반복: 규칙 하나 → 테스트 실패 보기 → 구현 → `$verify` → `$decide` → 커밋
+8. 종료 35분 전 동결 → `bash /tmp/kit/scripts/presubmit.sh .` → 제출 문서
+9. `$brief` → 읽고 보완
+10. 종료 10분 전 제출
+11. 서술형 4문장: 결정 / 구조 / 검증 / 한계
+
+막히면: 적는다 → 확인한다 → 커밋한다 → 설명한다
