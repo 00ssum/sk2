@@ -20,14 +20,16 @@
 
 ## 작업 순서
 
-1. `git clone https://github.com/00ssum/sk2 /tmp/kit && bash /tmp/kit/install.sh .`
+## 작업 순서
+
+1. `git clone https://github.com/00ssum/sk2 && bash sk2/install.sh .`
 2. `codex` → `/model` 6.1 Sol
 3. `$kickoff`
 4. 실무자 DM → 답은 NOTES.md에
 5. DECISIONS.md 0번 합의문 → `$decide`
 6. 첫 완주 (입력→출력 하나) → 커밋
 7. 반복: 규칙 하나 → 테스트 실패 보기 → 구현 → `$verify` → `$decide` → 커밋
-8. 종료 35분 전 동결 → `bash /tmp/kit/scripts/presubmit.sh .` → 제출 문서
+8. 종료 35분 전 동결 → `bash sk2/scripts/presubmit.sh .` → 제출 문서
 9. `$brief` → 읽고 보완
 10. 종료 10분 전 제출
 11. 서술형 4문장: 결정 / 구조 / 검증 / 한계
